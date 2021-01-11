@@ -1,0 +1,16 @@
+"x"
+"Filtros executados em: 2020-12-02 16:28:22
+Arquivo: Input/INFLUD-23-11-2020.csv
+Total: 598829
+Hospitalizations: 549809
+(-) Other respitatory viruses (influenza + others): 4356
+(-) Other causes (e.g, tuberculosis, bacterial pneumonia, etc): 1249
+(-) Without etiologic definition: 200631
+(-) Without classification: 32260
+SARS-CoV-2 Classification: 311313
+SARS-CoV-2 Positive: 251178
+(-) Age < 20 years: 5153
+Adults: 246025
+Final Sample: 228196
+Salvo em: srag_filtrado_08_08_modelagem
+"

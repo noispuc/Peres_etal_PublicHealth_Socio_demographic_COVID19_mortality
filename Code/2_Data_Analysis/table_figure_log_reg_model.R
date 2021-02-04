@@ -7,7 +7,7 @@ library(gtsummary)
 
 
 # Data input --------------------------------------------------------------
-srag_outcome <-  vroom::vroom("Input/srag_filtrado_08_08_modelagem.csv")
+srag_outcome <-  vroom::vroom("Input/srag_filtrado_08_08_modelagem.csv.gz")
 
 
 srag_descritiva <- 
@@ -153,4 +153,4 @@ plot_model_estimates <-
 
 
 ggsave("Output/Figures/figure3_model_estimates.pdf", plot_model_estimates, 
-       units = "in", width = 7, height = 5, dpi = 800)
+       units = "in", width = 7, height = 5, dpi = 900)

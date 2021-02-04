@@ -5,7 +5,7 @@ library(gtsummary)
 
 
 # Data input --------------------------------------------------------------
-srag_outcome <-  vroom::vroom("Input/srag_filtrado_08_08_modelagem.csv")
+srag_outcome <-  vroom::vroom("Input/srag_filtrado_08_08_modelagem.csv.gz")
 
 
 srag_descritiva <- 
@@ -22,6 +22,7 @@ srag_descritiva <-
     mutate(FAIXA_IDADE = as.factor(FAIXA_IDADE)) %>% 
     mutate(n_comorb_mreal = factor(n_comorb_mreal, levels = c(0, 1, 2), labels = c("No comorbidity", "1-2", ">= 2"))) %>% 
     mutate(SUPORT_VEN = factor(SUPORT_VEN, levels = c("No", "Yes, non-invasive", "Yes, invasive")))
+
 
 
 
@@ -195,7 +196,7 @@ combined_plot_ihm_skin_color <-
 
 ggsave("Output/Figures/figure2_IHM_selfreported_race.pdf",
        combined_plot_ihm_skin_color,
-       units = "in", dpi = 800, height = 8, width = 10)
+       units = "in", dpi = 900, height = 8, width = 10)
 
 
 
@@ -273,7 +274,7 @@ plot_ihm_race_epi_week <-
 
 
 ggsave("Output/Supplementary/plot_ihm_per_epi_week.pdf", 
-       plot_ihm_race_epi_week, units = "in", dpi = 800,
+       plot_ihm_race_epi_week, units = "in", dpi = 900,
        width = 5, height = 10)
 
 
